@@ -122,12 +122,12 @@ def hemisphere_img(browser):
         values = [img_url_rel, title]
         for i in keys:
             hemisphere[i] = values[i]
-            hemisphere['img_url'] = hemisphere.pop(0)
-            hemisphere['title'] = hemisphere.pop(1)
-            hemisphere_image_urls.append(hemisphere)
+        hemisphere['img_url'] = hemisphere.pop(0)
+        hemisphere['title'] = hemisphere.pop(1)
+        hemisphere_image_urls.append(hemisphere)
         browser.back()
         
-# 4. Print the list that holds the dictionary of each image url and title.
+    # 4. Print the list that holds the dictionary of each image url and title.
     return hemisphere_image_urls
 
 if __name__ == "__main__":
